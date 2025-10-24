@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Lojas PW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" class="logo">Lojas PW</a></h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="carrinho.html">Carrinho (<span id="contador-carrinho">0</span>)</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pesquisa-container">
+            <input type="search" id="barra-pesquisa" placeholder="Buscar produtos...">
+        </section>
+
+        <div class="admin-controls">
+            <button id="btn-mostrar-form">Cadastrar Novo Produto</button>
+        </div>
+
+        <section class="form-container admin-section">
+            <h2>Cadastrar Novo Produto</h2>
+            <form id="form-produto">
+                <label for="nome-produto">Nome do Produto:</label>
+                <input type="text" id="nome-produto" required>
+                <label for="preco-produto">Preço:</label>
+                <input type="number" id="preco-produto" step="0.01" required>
+                <label for="img-produto">URL da Imagem:</label>
+                <input type="url" id="img-produto" placeholder="https://exemplo.com/imagem.jpg">
+                <button type="submit">Adicionar Produto</button>
+            </form>
+        </section>
+
+        <section class="report-container">
+            <h2>Todos os Produtos</h2>
+            <div id="lista-produtos" class="grid-produtos">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lojas PW - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto - Lojas PW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1><a href="index.html" class="logo">Lojas PW</a></h1>
+    <nav>
+        <div class="dropdown">
+            <a href="index.html" class="dropbtn">Produtos</a>
+            <div class="dropdown-content">
+                <a href="index.html">Cadastrar Novo</a>
+            </div>
+        </div>
+        <a href="carrinho.html">Carrinho (<span id="contador-carrinho">0</span>)</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+    <main>
+        <section class="form-container" style="max-width: 600px; margin: 20px auto;">
+            <h2>Cadastrar Novo Produto</h2>
+            <form id="form-produto">
+                <label for="nome-produto">Nome do Produto:</label>
+                <input type="text" id="nome-produto" required>
+
+                <label for="preco-produto">Preço:</label>
+                <input type="number" id="preco-produto" step="0.01" required>
+
+                <label for="img-produto">URL da Imagem:</label>
+                <input type="url" id="img-produto" placeholder="https://exemplo.com/imagem.jpg">
+
+                <button type="submit">Adicionar Produto</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lojas PW - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
